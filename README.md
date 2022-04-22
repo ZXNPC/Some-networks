@@ -19,7 +19,7 @@ with open(file_name, 'rb') as f:
     history = pickle.load(f)
 ```
 Structure of history.txt file
-```json
+```python
 {
   "loss": list,
   "accuracy": list,
