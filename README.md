@@ -1,9 +1,46 @@
 ##Some-networks
 
-Some networks based on MNIST, FASHION MNIST and CIFAR10
+Some fnn or cnn networks trained based on MNIST, FASHION MNIST and CIFAR10
 
 ---
 
+###models
+
+As mentioned above.
+
+### history
+
+Recordong of Accuracy and Loss during the training process.
+
+```python
+import pickle
+
+with open(file_name, 'rb') as f:
+    history = pickle.load(f)
+```
+Structure of history.txt file
+```json
+{
+  "loss": list,
+  "accuracy": list,
+  "val_loss": list,
+  "val_accuracy": list
+}
+```
+e.g.
+```python
+import pickle
+import matplotlib.pyplot as plt
+
+with open('history/mnist_fnn_3x100_tanh.txt', 'rb') as f:
+    history = pickle.load(f)
+plt.plot(history['accuracy'])
+plt.show()
+```
+![accuracy](Figure_1.png "accuracy")
+
+---
+###model.eavaluate
 |    | Network                         | Accuracy            | Loss                |
 |----|---------------------------------|---------------------|---------------------|
 | 0  | cifar10_fnn_3x100_atanh         | 0.49889999628067017 | 2.015043258666992   |
