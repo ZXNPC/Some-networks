@@ -41,6 +41,7 @@ plt.show()
 
 ---
 ###model.eavaluate
+
 O for overfitting, T for fitting, F for underfitting
 
 |    | Network                              | Accuracy    | Loss        | Epochs | Fitting |
