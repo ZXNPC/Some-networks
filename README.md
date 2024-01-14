@@ -1,10 +1,10 @@
-##Some-networks
+## Some-networks
 
 Some fnn or cnn networks trained based on MNIST, FASHION MNIST and CIFAR10
 
 ---
 
-###models
+### models
 
 As mentioned above.
 
@@ -40,7 +40,7 @@ plt.show()
 ![accuracy](Figure_1.png "accuracy")
 
 ---
-###model.eavaluate
+### model.eavaluate
 
 O for overfitting, T for fitting, F for underfitting
 
